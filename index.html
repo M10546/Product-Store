@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Product Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #111827;
+    }
+
+    header {
+      background: #111827;
+      color: #ffffff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .image {
+      height: 160px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .watch { background: linear-gradient(135deg, #c7d2fe, #e5e7eb); }
+    .lipbalm { background: linear-gradient(135deg, #fde68a, #fef3c7); }
+    .penset { background: linear-gradient(135deg, #111827, #374151); color: #e5e7eb; }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Product Store</h1>
+    <p>Select a product to view details</p>
+  </header>
+
+  <main>
+    <section class="grid">
+
+      <a href="watch.html">
+        <div class="card">
+          <div class="image watch">Smart Watch</div>
+          <h3>Smart Watch</h3>
+          <p>$99</p>
+        </div>
+      </a>
+
+      <a href="balm.html">
+        <div class="card">
+          <div class="image lipbalm">Lip Balm</div>
+          <h3>Lip Balm</h3>
+          <p>$6</p>
+        </div>
+      </a>
+
+      <a href="pen.html">
+        <div class="card">
+          <div class="image penset">Elegant Pen Set</div>
+          <h3>Elegant Pen Set</h3>
+          <p>$29</p>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Simple Store
+  </footer>
+
+</body>
+</html>
